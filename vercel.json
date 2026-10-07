@@ -1,5 +1,11 @@
 {
   "framework": "vite",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/((?!api/|assets/|media/|.*\\..*).*)", "destination": "/index.html" },
+    { "source": "/aviso-de-privacidad.html", "destination": "/index.html" },
+    { "source": "/terminos-y-condiciones.html", "destination": "/index.html" }
+  ]
 }

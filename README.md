@@ -31,3 +31,7 @@ Importa el repo en Vercel (framework Vite se detecta solo). Cada `git push` a `m
 - `src/components/ContactForm.tsx` · formulario → `POST /api/lead`
 - `api/lead.ts` · valida, filtra bots (honeypot) y guarda en Supabase
 - `supabase/schema.sql` · tabla `leads` con RLS activo
+
+## Páginas y medios
+Rutas: `/`, `/otros-servicios`, `/aviso-de-privacidad`, `/terminos-y-condiciones` (rewrites en `vercel.json`).
+Fotos y videos propios: ver `public/media/LEEME.txt`. Widget del asistente (ClienteAI) está en `index.html`, antes de `</body>`.

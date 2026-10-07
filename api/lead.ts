@@ -3,7 +3,8 @@ import { createClient } from '@supabase/supabase-js'
 
 const SERVICIOS = [
   'Landing page', 'Menú digital', 'Sitio web empresarial',
-  'Catálogo / citas / reservaciones', 'Tienda en línea', 'Sistema a la medida', 'No estoy seguro',
+  'Catálogo / citas / reservaciones', 'Tienda en línea', 'Sistema a la medida',
+  'Imágenes o video con IA', 'No estoy seguro',
 ]
 
 const clean = (v: unknown, max: number) => String(v ?? '').trim().slice(0, max)
@@ -20,6 +21,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     nombre: clean(b.nombre, 120),
     whatsapp: clean(b.whatsapp, 30),
     correo: clean(b.correo, 160),
+    ciudad: clean(b.ciudad, 80) || null,
+    negocio: clean(b.negocio, 120) || null,
+    giro: clean(b.giro, 120) || null,
     servicio: clean(b.servicio, 60),
     presupuesto: clean(b.presupuesto, 40) || null,
     mensaje: clean(b.mensaje, 2000) || null,

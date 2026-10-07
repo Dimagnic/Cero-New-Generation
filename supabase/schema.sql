@@ -4,6 +4,9 @@ create table if not exists public.leads (
   nombre text not null,
   whatsapp text not null,
   correo text not null,
+  ciudad text,
+  negocio text,
+  giro text,
   servicio text not null,
   presupuesto text,
   mensaje text,
@@ -13,3 +16,8 @@ create table if not exists public.leads (
 
 -- RLS activo y sin políticas públicas: solo el backend (service role) escribe.
 alter table public.leads enable row level security;
+
+-- Si ya habías creado la tabla antes, ejecuta esto:
+alter table public.leads add column if not exists ciudad text;
+alter table public.leads add column if not exists negocio text;
+alter table public.leads add column if not exists giro text;

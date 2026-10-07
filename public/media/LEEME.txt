@@ -1,0 +1,9 @@
+Coloca aquí tus propios archivos (se muestran automáticamente; si faltan, se ve un fondo degradado):
+
+Proyectos (Inicio):   proyecto-gimnasios.jpg, proyecto-salones.jpg, proyecto-servicios.jpg, proyecto-catering.jpg, proyecto-menu.jpg
+Imágenes (Otros):     imagen-1.jpg ... imagen-6.jpg
+Videos (Otros):       video-1.mp4, video-2.mp4  (portadas opcionales: video-1.jpg, video-2.jpg)
+
+Las rutas se pueden cambiar en src/content.ts (examples y videos).
+
+Hero (Inicio):        hero.jpg  -> foto de fondo del hero (si no existe se muestra una escena ilustrada)
