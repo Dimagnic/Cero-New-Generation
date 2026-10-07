@@ -148,3 +148,11 @@ export const videos = [
   { label: 'Reel · YouTube Shorts', src: '/media/video-1.mp4', poster: '/media/video-1.jpg', bg: 'linear-gradient(160deg,#3a0a10,#07111F)' },
   { label: 'Reel · YouTube Shorts', src: '/media/video-2.mp4', poster: '/media/video-2.jpg', bg: 'linear-gradient(160deg,#26466e,#07111F)' },
 ]
+
+// Redes sociales: reemplaza por las URLs reales de Cero+ (o ponlas en Vercel como VITE_FACEBOOK, VITE_INSTAGRAM, VITE_YOUTUBE).
+// Si dejas una vacia (''), su icono no se muestra.
+export const SOCIAL = {
+  facebook: import.meta.env.VITE_FACEBOOK || 'https://www.facebook.com/',
+  instagram: import.meta.env.VITE_INSTAGRAM || 'https://www.instagram.com/',
+  youtube: import.meta.env.VITE_YOUTUBE || 'https://www.youtube.com/',
+}
