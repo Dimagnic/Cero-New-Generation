@@ -41,7 +41,6 @@ export default function Footer() {
       <div className="wrap ft">
         <div className="ft-brand">
           <img src="/logo.png" alt="Cero+" />
-          <strong>{LEGAL_NAME}</strong>
           <p>Páginas web profesionales para negocios.</p>
           <ul className="ft-contact">
             <li><a href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
