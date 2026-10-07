@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { A } from '../router'
 import ContactForm from '../components/ContactForm'
 import * as c from '../content'
+import Emblem from '../components/Emblem'
 
 const num = (i: number) => String(i + 1).padStart(2, '0')
 const ext = { target: '_blank', rel: 'noopener' } as const
@@ -36,19 +37,6 @@ function HeroScene() {
       <rect x="360" y="470" width="190" height="26" rx="4" fill="#0b0e13" stroke="#1d232d" />
       <ellipse cx="590" cy="520" rx="22" ry="14" fill="#0b0e13" />
       <g><rect x="690" y="500" width="62" height="60" rx="6" fill="#0a0c10" /><rect x="690" y="500" width="62" height="14" rx="6" fill="#E61923" /></g>
-    </svg>
-  )
-}
-
-function Emblem() {
-  return (
-    <svg className="emblem" viewBox="0 0 320 300" role="img" aria-label="Cero+ desarrollo web">
-      <defs><linearGradient id="er" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ff2a35" /><stop offset="1" stopColor="#7a0f16" /></linearGradient></defs>
-      <circle cx="160" cy="130" r="92" fill="none" stroke="url(#er)" strokeWidth="26" />
-      <path d="M262 28v84M220 70h84" stroke="#07111F" strokeWidth="26" strokeLinecap="round" />
-      <path d="M262 28v84M220 70h84" stroke="#E61923" strokeWidth="14" strokeLinecap="round" />
-      <path d="M30 228 Q160 252 290 228 L284 272 Q160 296 36 272 Z" fill="#07111F" stroke="#9AA6B8" strokeWidth="2" />
-      <text x="160" y="266" textAnchor="middle" fontFamily="Barlow Condensed,Impact,sans-serif" fontWeight="800" fontSize="24" fill="#fff" letterSpacing="2">CERO+ · DESARROLLO WEB</text>
     </svg>
   )
 }
