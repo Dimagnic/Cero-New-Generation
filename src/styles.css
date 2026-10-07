@@ -225,3 +225,16 @@ footer .ft .note{margin-top:16px;line-height:1.5}
 /* Logo sobre fondo rojo: sombra oscura en capas para separar el anillo */
 .final img{height:72px;width:auto;filter:drop-shadow(0 0 1px #07111F) drop-shadow(0 0 2px #07111Fcc) drop-shadow(0 2px 4px #07111F99) drop-shadow(0 6px 12px #07111F66)}
 @media(max-width:520px){.final img{height:60px}}
+/* Tarjetas de precios: mismo tamano y filas alineadas */
+#precios .g5{grid-template-columns:minmax(0,1fr);row-gap:14px}
+@media(min-width:760px) and (max-width:1099px){#precios .g5{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1100px){#precios .g5{grid-template-columns:repeat(5,minmax(0,1fr))}}
+#precios .card .badge{white-space:nowrap}
+#precios .card h3{min-height:3.4rem;margin:0}
+#precios .card .from{margin:0}
+#precios .card .btn{display:flex;align-items:center;justify-content:center;min-height:52px}
+@supports (grid-template-rows:subgrid){
+  #precios .g5 .card{display:grid;grid-row:span 7;grid-template-rows:subgrid;row-gap:10px}
+  #precios .g5 .card p{align-self:start}
+  #precios .g5 .card .btn{align-self:stretch}
+}

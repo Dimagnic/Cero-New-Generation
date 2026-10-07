@@ -47,7 +47,7 @@ export const solutions = [
 export const plans = [
   { tag: 'Para empezar', name: 'Landing page', price: '3,990', time: 'Aprox. 7 días hábiles', cta: 'Cotizar landing page',
     text: 'Para presentar un negocio, servicio, producto, campaña o promoción en una sola página.' },
-  { tag: 'Carta digital con QR', name: 'Menú digital', price: '4,990', time: 'Aprox. 7 a 10 días hábiles', cta: 'Cotizar menú digital',
+  { tag: 'Carta con QR', name: 'Menú digital', price: '4,990', time: 'Aprox. 7 a 10 días hábiles', cta: 'Cotizar menú digital',
     text: 'Para restaurantes, cafeterías, bares y negocios de alimentos que necesitan mostrar su menú desde el celular con enlace o código QR.' },
   { hot: true, tag: 'Más completo', name: 'Sitio web empresarial', price: '6,490', time: 'Tiempo estimado según alcance', cta: 'Cotizar sitio empresarial',
     text: 'Para empresas que necesitan presentar con mayor amplitud servicios, historia, experiencia, instalaciones, galería y contacto.' },
