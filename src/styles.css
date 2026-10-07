@@ -221,3 +221,7 @@ footer .ft .soc svg{width:18px;height:18px}
 footer .ft .note{margin-top:16px;line-height:1.5}
 .ft-bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center;margin-top:44px;padding:22px 0 26px;border-top:1px solid #ffffff14;font-size:.78rem;color:var(--mut)}
 .ft-by{font:800 .75rem 'Barlow Condensed',Impact,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+
+/* Logo sobre fondo rojo: sombra oscura en capas para separar el anillo */
+.final img{height:72px;width:auto;filter:drop-shadow(0 0 1px #07111F) drop-shadow(0 0 2px #07111Fcc) drop-shadow(0 2px 4px #07111F99) drop-shadow(0 6px 12px #07111F66)}
+@media(max-width:520px){.final img{height:60px}}
